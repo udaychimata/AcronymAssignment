@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/acronym_fragment">
+
+    <fragment
+        android:id="@+id/acronym_fragment"
+        android:name="com.example.myapplication.AcronymFragment"
+        tools:layout="@layout/fragment_acronym">
+
+        <action
+            android:id="@+id/action_acronym_fragment_to_acronym_list_fragment"
+            app:destination="@id/acronym_list_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/acronym_list_fragment"
+        android:name="com.example.myapplication.AcronymResultListFragment"
+        android:label="@string/acronym_result_list_title">
+
+        <action
+            android:id="@+id/action_acronym_list_fragment_to_acronym_fragment"
+            app:destination="@id/acronym_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

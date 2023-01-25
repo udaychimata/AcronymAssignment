@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="editTextHeight">40dp</dimen>
+    <dimen name="buttonHeight">56dp</dimen>
+    <dimen name="progressBarHeight">10dp</dimen>
+    <dimen name="progressBarWidth">10dp</dimen>
+</resources>
